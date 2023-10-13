@@ -1,16 +1,8 @@
-# provider_statemanagement
+feat: Implement state management with Provider in Home and SecondPage
 
-A new Flutter project.
+In this commit, I added state management to the Home and SecondPage widgets using the Provider package. The NumbersListProvider class was created as a ChangeNotifier to manage a list of numbers. Both Home and SecondPage widgets now share the same instance of NumbersListProvider, ensuring that changes made in one page are reflected in the other.
 
-## Getting Started
+Additionally, I corrected the AppBar title in the SecondPage widget to display "Second Page" for consistency.
 
-This project is a starting point for a Flutter application.
+This implementation allows for dynamic updates of the number list and count when the floating action button is pressed, and the state is shared between both pages.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
